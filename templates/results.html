@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Results{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Quiz Results</h1>
+    <p class="lead">See how well you did on the quiz about NYC Architectural Styles.</p>
+
+    <div class="alert alert-success" role="alert">
+        Your score is {{ score }} out of {{ total_questions }}.
+    </div>
+
+    <!-- Display detailed feedback -->
+    <h2>Detailed Feedback:</h2>
+    <ul>
+        {% for item in feedback %}
+        <li>
+            <strong>Question:</strong> {{ item.question }} (Difficulty: {{ item.difficulty | capitalize }})<br>
+            <strong>Your Answer:</strong> {{ item.user_answer }}<br>
+            <strong>Correct Answer:</strong> {{ item.correct_answer }}<br>
+            <strong>Status:</strong> 
+            {% if item.result %}
+                <span class="text-success">Correct</span>
+            {% else %}
+                <span class="text-danger">Incorrect</span>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Navigation buttons specific to this template -->
+    <div class="mt-4">
+        <a href="{{ url_for('learn', lesson_id=1) }}" class="btn btn-primary">Start Learning</a>
+        <a href="{{ url_for('quiz_question', question_number=1) }}" class="btn btn-secondary">Retake Quiz</a>
+    </div>
+</div>
+{% endblock %}

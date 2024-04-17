@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Learn About {{ lesson.title }}{% endblock %}
+
+{% block content %}
+<main class="lesson-content">
+    <h1>{{ lesson.title }}</h1>
+    <p class="lead">{{ lesson.description }}</p>
+
+    {% for content in lesson.content %}
+    <section class="content-section">
+        <h2>{{ content.subheading }}</h2>
+        <p>{{ content.text }}</p>
+    </section>
+    {% endfor %}
+</main>
+{% endblock %}

@@ -1,0 +1,83 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background to the whole page */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Text alignment for header and main content */
+.navigation, .lesson-content {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 0.5em;
+}
+
+/* Learning content styles */
+h2 {
+    font-size: 1.75rem;
+    color: #333;
+    margin: 1em 0;
+}
+
+p, .form-check-label, .option-label {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Image styles */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+/* Button styles */
+.btn {
+    /* ... existing button styles ... */
+    margin: 0.5em;
+    padding: 0.75em 1.5em;
+}
+
+/* Navigation bar for lesson pages */
+.lesson-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+/* Content section styles */
+.content-section {
+    margin: 2em 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .lesson-content {
+        padding: 1em;
+    }
+    .content-section {
+        margin: 1em 0;
+    }
+}
+

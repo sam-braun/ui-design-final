@@ -1,0 +1,134 @@
+{
+    "lessons": [
+        {
+            "id": 1,
+            "title": "Internationalist Style",
+            "content": [
+                {
+                    "subheading": "Rise of Modernism",
+                    "text": "Emerging from the Bauhaus school of thought, the Internationalist Style, also known as International Style, was a major architectural trend of the 20th century. It embraced the notion that form should follow function, and architecture should be as efficient as it is aesthetically clean."
+                },
+                {
+                    "subheading": "Pioneers of the Style",
+                    "text": "Luminaries like Le Corbusier, Ludwig Mies van der Rohe, and Walter Gropius championed this movement, advocating for an architecture that spoke the language of the Industrial Age - simplicity, clarity, and the absence of frivolous ornamentation."
+                },
+                {
+                    "subheading": "Curtain Wall Systems",
+                    "text": "The innovation of the curtain wall system allowed for the exterior of buildings to be entirely clad in glass, a revolution in construction that led to the transparent, shimmering facades that dominate metropolitan skylines today."
+                },
+                {
+                    "subheading": "A Global Language",
+                    "text": "Its appeal as a symbol of modernity and progress led to the Internationalist Style being adopted worldwide, making it the first architectural style to receive global recognition and implementation, shaping cities from New York to Shanghai."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Art Deco",
+            "content": [
+                {
+                    "subheading": "The Exuberance of the Roaring Twenties",
+                    "text": "Born in the roaring twenties and flourishing through the thirties, Art Deco was a testament to the technological, industrial, and societal advancements of its time. It celebrated modern life with a style that was at once glamorous and assertive."
+                },
+                {
+                    "subheading": "Characteristics of Art Deco",
+                    "text": "With its distinctive symmetrical motifs, stepped forms, and stylized sunbursts, Art Deco architecture creates a striking visual rhetoric. It borrows from a variety of sources, including the boldness of airplanes and the sleekness of ocean liners, symbolizing speed, freedom, and luxury."
+                },
+                {
+                    "subheading": "Notable Edifices",
+                    "text": "Iconic edifices, such as the Empire State Building and the Palais de Chaillot, are emblematic of Art Deco's love affair with verticality and ornamentation. This style also ventures into exotic motifs, drawing inspiration from the far corners of the world."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Beaux-Arts",
+            "content": [
+                {
+                    "subheading": "Legacy of the French Academies",
+                    "text": "Beaux-Arts architecture was more than just a style; it was a statement of wealth and power, often used for structures meant to leave a lasting impression. Grandiose facades, opulent sculptures, and an emphasis on symmetry and order are its hallmarks."
+                },
+                {
+                    "subheading": "Masters and Masterpieces",
+                    "text": "Architects such as Richard Morris Hunt and Charles Garnier became synonymous with the Beaux-Arts movement. Their masterpieces, like the Metropolitan Museum of Art and the Paris Opera House, remain as testaments to the grandeur and craftsmanship of this opulent style."
+                },
+                {
+                    "subheading": "Influence on Public Architecture",
+                    "text": "In the United States, the Beaux-Arts style became the blueprint for much of the nation's most important public architecture in the early 20th century. Its principles shaped the design of countless courthouses, libraries, and train stations, embedding a sense of dignity and grandeur in public spaces."
+                }
+            ]
+        }
+    ],
+    "quiz": [
+        {
+            "id": 1,
+            "question": "What is this architectural feature called?",
+            "options": ["Solar shield glass", "Curtain wall of glass", "Smooth wall", "Textured wall of glass"],
+            "correct_answer": "Curtain wall of glass",
+            "difficulty": "easy"
+        },
+        {
+            "id": 2,
+            "question": "Which style is most associated with the use of decorative, geometric forms?",
+            "options": ["Renaissance Revival", "Beaux Arts", "Art Deco", "Internationalist"],
+            "correct_answer": "Art Deco",
+            "difficulty": "easy"
+        },
+        {
+            "id": 3,
+            "question": "Which architectural style is known for its grandiosity and elaborate decorations?",
+            "options": ["Modernism", "Gothic Revival", "Beaux-Arts", "Art Nouveau"],
+            "correct_answer": "Beaux-Arts",
+            "difficulty": "easy"
+        },
+        {
+            "id": 4,
+            "question": "What characteristic is a hallmark of Internationalist architecture?",
+            "options": ["Ornamental facades", "Minimalist forms", "Gothic spires", "Bright color schemes"],
+            "correct_answer": "Minimalist forms",
+            "difficulty": "easy"
+        },
+        {
+            "id": 5,
+            "question": "What term describes the small projecting tower often found at the corners of Gothic cathedrals?",
+            "options": ["Apse", "Nave", "Pinnacle", "Turret"],
+            "correct_answer": "Turret",
+            "difficulty": "medium"
+        },
+        {
+            "id": 6,
+            "question": "Which architectural style emphasizes a return to classical art and symmetry seen mainly during the 18th century?",
+            "options": ["Baroque", "Neo-Classical", "Victorian", "Craftsman"],
+            "correct_answer": "Neo-Classical",
+            "difficulty": "medium"
+        },
+        {
+            "id": 7,
+            "question": "Identify the style known for its expressionistic use of steel and glass:",
+            "options": ["Brutalism", "High-tech", "Art Nouveau", "Deconstructivism"],
+            "correct_answer": "High-tech",
+            "difficulty": "medium"
+        },
+        {
+            "id": 8,
+            "question": "Which style is characterized by an emphasis on volume, asymmetrical compositions, and minimal surface decoration?",
+            "options": ["Rococo", "Modernist", "Colonial", "Postmodern"],
+            "correct_answer": "Modernist",
+            "difficulty": "difficult"
+        },
+        {
+            "id": 9,
+            "question": "What architectural movement includes features like fragmented geometry and non-rectilinear shapes?",
+            "options": ["Constructivism", "Futurism", "Deconstructivism", "Cubism"],
+            "correct_answer": "Deconstructivism",
+            "difficulty": "difficult"
+        },
+        {
+            "id": 10,
+            "question": "Which architectural approach integrates environmental and sustainability considerations into its design?",
+            "options": ["Green architecture", "Organic architecture", "Biomimicry", "Eco-tech"],
+            "correct_answer": "Green architecture",
+            "difficulty": "difficult"
+        }
+    ]
+}

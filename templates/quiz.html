@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz on NYC Architectural Styles{% endblock %}
+
+{% block content %}
+<header class="navigation">
+    <a href="{{ url_for('home') }}" class="btn btn-secondary mb-4">Home</a>
+</header>
+
+<main class="quiz-main">
+    <form id="quizForm" action="{{ url_for('submit_quiz') }}" method="POST">
+        {% for question in questions %}
+        <section class="quiz-section">
+            <h2 class="quiz-question">{{ question.question }}</h2>
+            {% if question.difficulty %}
+            <p class="quiz-difficulty">Difficulty: {{ question.difficulty | capitalize }}</p>
+            {% endif %}
+            {% for option in question.options %}
+            <label class="option-label">
+                <input class="form-check-input" type="radio" name="answer_{{ question.id }}" value="{{ option }}" required>
+                {{ option }}
+            </label>
+            {% endfor %}
+        </section>
+        {% endfor %}
+        <button type="submit" class="btn btn-success btn-lg">Finish Quiz</button>
+    </form>
+</main>
+{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}NYC Architecture Explorer{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="text-center">
+    <header>
+        <!-- Common header elements shown on all pages -->
+        <div class="container mt-3">
+            <a href="{{ url_for('home') }}" class="btn btn-info">Home</a>
+            <a href="{{ url_for('learn', lesson_id=1) }}" class="btn btn-primary">Start Learning</a>
+            <a href="{{ url_for('quiz_question', question_number=1) }}" class="btn btn-secondary">Take the Quiz</a>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="text-muted">© 2024 NYC Architecture Explorer</p>
+        </div>
+    </footer>
+
+    <!-- Scripts included once for all pages -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
