@@ -5,11 +5,9 @@ from typing import Dict, Any
 app = Flask(__name__)
 
 
-# Global cache for data
 data_cache: Dict[str, Any] = {}
 
 def load_data() -> Dict[str, Any]:
-    """Load data from JSON file only if not already loaded."""
     global data_cache
     if not data_cache:
         try:
@@ -22,12 +20,10 @@ def load_data() -> Dict[str, Any]:
 
 @app.route('/')
 def home():
-    """Serve the home page."""
     return render_template('home.html')
 
 @app.route('/learn/<int:lesson_id>')
 def learn(lesson_id: int):
-    """Serve a specific lesson page based on the given ID."""
     data = load_data()
     lesson = next((l for l in data.get('lessons', []) if l['id'] == lesson_id), None)
     if lesson:

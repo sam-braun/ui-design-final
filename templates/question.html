@@ -5,12 +5,15 @@
 {% block content %}
 
 <main class="quiz-main">
+    
     <form id="quizForm" action="{{ url_for('submit_answer') }}" method="POST">
         <section class="quiz-section">
             <h2 class="quiz-question">{{ question.question }}</h2>
             {% if question.difficulty %}
             <p class="quiz-difficulty">Difficulty: {{ question.difficulty | capitalize }}</p>
             {% endif %}
+            <div><img class="test-image" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Midtown_Manhattan_Skyline_004.jpg"
+        alt="UN Headquarters"></div>
             {% for option in question.options %}
             <label class="option-label">
                 <input class="form-check-input" type="radio" name="selected_answer" value="{{ option }}" required>
