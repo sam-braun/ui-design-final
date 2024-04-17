@@ -7,6 +7,9 @@
     <h1>{{ lesson.title }}</h1>
     <p class="lead">{{ lesson.description }}</p>
 
+    <img class="test-image" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Midtown_Manhattan_Skyline_004.jpg"
+        alt="UN Headquarters">
+
     {% for content in lesson.content %}
     <section class="content-section">
         <h2>{{ content.subheading }}</h2>
